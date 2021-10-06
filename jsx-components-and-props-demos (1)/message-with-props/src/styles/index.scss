@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+$white: #fff;
+$gray: #b3b3b3;
+$red: #ff4d4d;
+$green: #66cc66;
+$blue: #66b3ff;
+$yellow: #ffd24d;
+$orange: #ffa31a;
+
+%row-container {
+  display: flex;
+  flex-direction: row;
+}
+
+%column-container {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: $white;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px #333;
+}
+
+.page {
+  background-color: #fefefe;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.message {
+  @extend %row-container;
+  background-color: $gray;
+  border: 1px solid darken($gray, 10%);
+  border-radius: 0.3rem;
+  font-size: 1.1rem;
+  justify-content: space-between;
+  margin: 0.25rem 0;
+  padding: 1rem;
+  p {
+    margin: 0;
+  }
+  &__icon {
+    margin-right: 0.5rem;
+  }
+  &__close-btn {
+    cursor: pointer;
+    font-size: 1.3rem;
+  }
+  &--error {
+    // this repeated logic could be better handled using a mixin or a function!
+    background-color: $red;
+    border-color: darken($red, 10%);
+    color: darken($red, 30%);
+  }
+  &--success {
+    background-color: $green;
+    border-color: darken($green, 10%);
+    color: darken($green, 30%);
+  }
+  &--main {
+    background-color: $blue;
+    border-color: darken($blue, 10%);
+    color: darken($blue, 30%);
+  }
+  &--info {
+    background-color: $yellow;
+    border-color: darken($yellow, 10%);
+    color: darken($yellow, 30%);
+  }
+  &--warning {
+    background-color: $orange;
+    border-color: darken($orange, 10%);
+    color: darken($orange, 30%);
+  }
+}
