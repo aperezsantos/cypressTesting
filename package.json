@@ -3,26 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "cypress": "^8.6.0"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html --open"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/katieburrows/cypressTesting.git"
+    "url": "git+https://github.com/aperezsantos/cypressTesting.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/katieburrows/cypressTesting/issues"
+    "url": "https://github.com/aperezsantos/cypressTesting/issues"
   },
-  "homepage": "https://github.com/katieburrows/cypressTesting#readme",
-  "dependencies": {
-    "@parcel/transformer-sass": "^2.0.0-rc.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
-  "devDependencies": {
-  }
+  "homepage": "https://github.com/aperezsantos/cypressTesting#readme"
 }
