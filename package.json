@@ -1,14 +1,14 @@
 {
   "name": "cypressTesting",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
     "cypress": "^8.6.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,6 @@
   "bugs": {
     "url": "https://github.com/aperezsantos/cypressTesting/issues"
   },
-  "homepage": "https://github.com/aperezsantos/cypressTesting#readme"
+  "homepage": "https://github.com/aperezsantos/cypressTesting#readme",
+  "description": ""
 }
